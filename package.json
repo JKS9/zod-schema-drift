@@ -1,0 +1,46 @@
+{
+  "name": "zod-schema-drift",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Strict, but not too strict: know when an API adds a field. Zod 4, one alert per new field with its path, type and a sample.",
+  "keywords": [
+    "zod",
+    "schema-drift",
+    "api-monitoring",
+    "web-scraping",
+    "data-validation",
+    "postgres",
+    "webhook",
+    "typescript"
+  ],
+  "license": "MIT",
+  "author": "JKS9 (https://github.com/JKS9)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JKS9/zod-schema-drift.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JKS9/zod-schema-drift/issues"
+  },
+  "homepage": "https://github.com/JKS9/zod-schema-drift#readme",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "yarn@1.22.22",
+  "scripts": {
+    "test": "tsx --test validate.test.ts validate.dev.test.ts",
+    "typecheck": "tsc --noEmit",
+    "verify": "yarn typecheck && yarn test"
+  },
+  "dependencies": {
+    "pg": "^8.23.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "@types/pg": "^8.23.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
