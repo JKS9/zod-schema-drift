@@ -6,11 +6,10 @@
   "keywords": [
     "zod",
     "schema-drift",
-    "api-monitoring",
     "web-scraping",
     "data-validation",
-    "postgres",
-    "webhook",
+    "schema-validation",
+    "data-quality",
     "typescript"
   ],
   "license": "MIT",
